@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spotify</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Spotify - Web player: música para todas as pessoas</title>
+  <link rel="stylesheet" href="/src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/vars.css">
+  <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+  <link rel="stylesheet" href="./src/styles/main-content.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -18,7 +20,7 @@
     <nav class="sidebar-navigation">
       <div class="logo">
         <a href="">
-          <img src="./assets/icons/logo-spotify.png" alt="Logo" />
+          <img src="./src/assets/icons/logo-spotify.png" alt="Logo" />
         </a>
       </div>
       <ul>
@@ -56,6 +58,16 @@
         </div>
       </section>
 
+      <section class="section-playlist">
+        <div class="section-playlist-content">
+          <span class="text title">Que tal seguir um podcast novo?</span>
+          <span class="text subtitle">Avisaremos você sobre novos episódios.</span>
+          <button class="section-playlist-button">
+            <span>Explore podcasts</span>
+          </button>
+        </div>
+      </section>
+
       <div class="cookies">
         <a href="">Cookies</a>
       </div>
@@ -68,6 +80,45 @@
       </div>
     </div>
   </div>
+
+  <main>
+    <div class="main-container">
+      <nav class="header-navigation">
+        <div class="navigation">
+          <button class="arrow-left">
+            <img src="/src/assets/icons/small-left.png" alt="Seta para esquerda">
+          </button>
+          <button class="arrow-right">
+            <img src="/src/assets/icons/small-right.png" alt="Seta para direita">
+          </button>
+        </div>
+        <div class="header-search">
+          <img src="./src/assets/icons/search.png">
+          <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+        </div>
+        <div class="header-login">
+          <button class="subscribe">Inscreva-se</button>
+          <button class="login">Entrar</button>
+        </div>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="disclaimer-premium">
+    <div class="text">
+      <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+      <p class="disclaimer-premium__subtitle">
+        Inscreva-se para curtir música ilimitada e podcasts só com alguns
+        anúncios. Não precisa de cartão de crédito.
+      </p>
+    </div>
+    <div class="button">
+      <button type="button">Inscreva-se grátis</button>
+    </div>
+  </footer>
+
+  <script src="script.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
 </body>
 
 </html>
